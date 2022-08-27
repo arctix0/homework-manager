@@ -1,6 +1,9 @@
 name: 'My Workflow'
 
-on: pull_request
+on: 
+  release:
+    types: [created]
+
 
 jobs:
   create-release:
